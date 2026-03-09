@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug in Hermes IDE
+labels: ["bug", "needs-triage"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Hermes IDE Version
+      placeholder: e.g. 0.3.37
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      placeholder: e.g. macOS 15.3, Windows 11 24H2, Ubuntu 24.04
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to trigger the bug.
+      placeholder: |
+        1. Open Hermes IDE
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste any relevant error messages, logs, or screenshots.

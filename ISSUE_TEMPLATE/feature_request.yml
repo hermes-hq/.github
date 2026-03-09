@@ -1,0 +1,64 @@
+name: Feature Request
+description: Suggest a feature for Hermes IDE
+labels: ["feature-request", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before submitting:** Please read our [Design Principles](https://github.com/hermes-hq/hermes-ide/blob/main/DESIGN_PRINCIPLES.md).
+
+        Hermes IDE is intentionally minimal. We say "no" to most feature requests
+        to keep the product focused. Features that can be implemented as
+        extensions will not be added to core.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: >
+        Describe the specific problem you are facing. Focus on the problem,
+        not the solution. "I want X" is not a problem statement.
+        "When I do Y, I cannot Z because..." is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How do you think this should work? Keep it brief.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: >
+        What other approaches have you considered? Could this be solved
+        with existing features, a workflow change, or an extension?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Does this add new UI or new concepts to learn?
+      options:
+        - "No — it improves an existing workflow"
+        - "Minimal — small addition to existing UI"
+        - "Yes — new panel, view, or significant UI element"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Alignment check
+      options:
+        - label: This feature aligns with Hermes IDE's minimalist philosophy
+          required: true
+        - label: This cannot be reasonably implemented as an extension
+          required: true
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
