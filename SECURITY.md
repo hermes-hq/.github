@@ -8,7 +8,7 @@ Only the latest released version of Hermes IDE receives security fixes.
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-Please report security vulnerabilities by emailing: **security@hermes-ide.dev**
+Please report security vulnerabilities by emailing: **security@hermes-ide.com**
 
 Include in your report:
 - Description of the vulnerability
