@@ -49,7 +49,7 @@ the project.
 
 Instances of unacceptable behavior may be reported to the project team at:
 
-**conduct@hermes-ide.com**
+**[ga.contact.me@gmail.com](mailto:ga.contact.me@gmail.com)**
 
 All complaints will be reviewed and investigated promptly and fairly. The project
 team is obligated to maintain confidentiality with regard to the reporter of an
